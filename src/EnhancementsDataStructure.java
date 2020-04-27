@@ -47,10 +47,9 @@ public class EnhancementsDataStructure {
     private final int value;
     private final int[][] matrix;
 
-    private int getEnhancements(Land land, Daytime daytime) {
+    public int getEnhancements(Land land, Daytime daytime) {
         return matrix[land.ordinal()][daytime.ordinal()];
     }
-
 
     public int get() {
         return value;

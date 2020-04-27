@@ -63,7 +63,7 @@ public class InputManager {
 
             while (scanner.hasNext()) {
                 String s = scanner.next();
-                if (s.matches("[0-9]")) {
+                if (s.matches("[0-9]+")) {
                     mapDataStructure.addCharacters(x, y, arrayList.stream().toArray(Character[]::new));
                     arrayList.clear();
                     x = Integer.parseInt(s);

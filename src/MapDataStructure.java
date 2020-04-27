@@ -1,11 +1,12 @@
 import javafx.util.Pair;
+
 import java.awt.*;
 import java.util.*;
 import java.util.List;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.Item>>  {
+public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.Item>> {
 
     public static class Item {
 
@@ -22,15 +23,15 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
         }
 
         private void addCharacter(Character character) {
-            if(characters.size() < 5)
+            if (characters.size() < 5)
                 characters.add(character);
             else {
-                throw new ProgramException("there must be a maximum of 5 pieces in a cell");
+                System.err.println("An error has occurred: there must be a maximum of 5 pieces in a cell");
             }
         }
 
         public void addCharacters(Character... characters) {
-            for(Character character : characters)
+            for (Character character : characters)
                 addCharacter(character);
         }
 
@@ -54,18 +55,31 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
     private Item[][] matrix;
 
     public Item get(int x, int y) {
-        return matrix[x][y];
+        try {
+            return matrix[x][y];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            throw new ProgramException(e);
+        }
     }
 
     public void set(int x, int y, Item item) {
-        matrix[x][y] = item;
+        try {
+            matrix[x][y] = item;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.err.println("An error has occurred: " + e.getLocalizedMessage());
+        }
     }
 
     public void addCharacters(int x, int y, Character... characters) {
-        matrix[x][y].addCharacters(characters);
+        try {
+            matrix[x][y].addCharacters(characters);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.err.println("An error has occurred: " + e.getLocalizedMessage());
+        }
     }
+
     @Override
-    public Iterator<Pair<Point,Item>> iterator() {
+    public Iterator<Pair<Point, Item>> iterator() {
         return new Iterator<>() {
             private final Item[][] _matrix = matrix;
             private int currentRow = 0;
@@ -80,7 +94,7 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
             }
 
             @Override
-            public Pair<Point,Item> next() {
+            public Pair<Point, Item> next() {
                 if (currentColumn == _matrix[currentRow].length) {
                     currentColumn = 0;
                     currentRow++;
@@ -88,7 +102,7 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
                 if (currentRow >= _matrix.length) {
                     throw new NoSuchElementException();
                 }
-                return new Pair<>(new Point(currentRow,currentColumn), _matrix[currentRow][currentColumn++]);
+                return new Pair<>(new Point(currentRow, currentColumn), _matrix[currentRow][currentColumn++]);
             }
         };
     }
@@ -97,8 +111,8 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
 
-        for(Item[] items : matrix){
-            for(Item item : items) {
+        for (Item[] items : matrix) {
+            for (Item item : items) {
                 stringBuilder.append(item.land.toString());
                 stringBuilder.append(':');
                 stringBuilder.append(item.getCharactersSize());
@@ -110,8 +124,8 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
         return stringBuilder.toString();
     }
 
-    public Stream<Pair<Point,Item>> stream() {
-        Spliterator<Pair<Point,Item>> spliterator = Spliterators .spliteratorUnknownSize(iterator(), 0);
+    public Stream<Pair<Point, Item>> stream() {
+        Spliterator<Pair<Point, Item>> spliterator = Spliterators.spliteratorUnknownSize(iterator(), 0);
         return StreamSupport.stream(spliterator, false);
     }
 }

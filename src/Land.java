@@ -6,11 +6,11 @@ public enum Land {
     }
     , PLAIN {
         public String toString() {
-            return "M";
+            return "P";
         }
     }, FOREST {
         public String toString() {
-            return "M";
+            return "F";
         }
     }
 }

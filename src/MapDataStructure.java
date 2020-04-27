@@ -2,6 +2,8 @@ import javafx.util.Pair;
 import java.awt.*;
 import java.util.*;
 import java.util.List;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.Item>>  {
 
@@ -19,7 +21,7 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
             return land;
         }
 
-        public void addCharacter(Character character) {
+        private void addCharacter(Character character) {
             if(characters.size() < 5)
                 characters.add(character);
             else {
@@ -27,7 +29,7 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
             }
         }
 
-        public void addCharacter(Character... characters) {
+        public void addCharacters(Character... characters) {
             for(Character character : characters)
                 addCharacter(character);
         }
@@ -59,6 +61,9 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
         matrix[x][y] = item;
     }
 
+    public void addCharacters(int x, int y, Character... characters) {
+        matrix[x][y].addCharacters(characters);
+    }
     @Override
     public Iterator<Pair<Point,Item>> iterator() {
         return new Iterator<>() {
@@ -68,7 +73,7 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
 
             @Override
             public boolean hasNext() {
-                if (currentRow + 1 == _matrix.length) {
+                if (currentRow == _matrix.length - 1) {
                     return currentColumn < _matrix[currentRow].length;
                 }
                 return currentRow < _matrix.length;
@@ -80,7 +85,7 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
                     currentColumn = 0;
                     currentRow++;
                 }
-                if (currentRow == _matrix.length -1 && currentColumn == _matrix[currentRow].length - 1) {
+                if (currentRow >= _matrix.length) {
                     throw new NoSuchElementException();
                 }
                 return new Pair<>(new Point(currentRow,currentColumn), _matrix[currentRow][currentColumn++]);
@@ -94,11 +99,19 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
 
         for(Item[] items : matrix){
             for(Item item : items) {
-                stringBuilder.append(item.land.toString().charAt(0));
+                stringBuilder.append(item.land.toString());
+                stringBuilder.append(':');
+                stringBuilder.append(item.getCharactersSize());
+                stringBuilder.append(' ');
             }
             stringBuilder.append('\n');
         }
 
         return stringBuilder.toString();
+    }
+
+    public Stream<Pair<Point,Item>> stream() {
+        Spliterator<Pair<Point,Item>> spliterator = Spliterators .spliteratorUnknownSize(iterator(), 0);
+        return StreamSupport.stream(spliterator, false);
     }
 }

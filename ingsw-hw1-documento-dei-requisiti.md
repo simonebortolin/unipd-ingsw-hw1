@@ -96,12 +96,7 @@ Il software è un semplice script da riga di comando che dato un input genera un
 
 
 
-![alt_text](ingsw-hw1-documento-dei-requisiti/image1.png "image_tooltip")
-
-
-
-![alt_text](ingsw-hw1-documento-dei-requisiti/image2.png "image_tooltip")
-
+![alt_text](ingsw-hw1-documento-dei-requisiti/image5.png "image_tooltip")
 
 
 # Requisiti di sistema
@@ -562,11 +557,13 @@ Il contesto dell’applicazione è un’applicazione stand-alone, indipendente d
 
 
 
-![alt_text](ingsw-hw1-documento-dei-requisiti/image3.png "image_tooltip")
+![alt_text](ingsw-hw1-documento-dei-requisiti/image4.png "image_tooltip")
 
 
 
 ## Caso d’uso
+
+![alt_text](ingsw-hw1-documento-dei-requisiti/image3.png "image_tooltip")
 
 
 <table>
@@ -614,7 +611,7 @@ Step 1) Se l’utente non mette il secondo file viene generato una mappa casuale
 
 # 
 
-![alt_text](ingsw-hw1-documento-dei-requisiti/image4.png "image_tooltip")
+![alt_text](ingsw-hw1-documento-dei-requisiti/image6.png "image_tooltip")
 
 
 
@@ -622,7 +619,7 @@ Step 1) Se l’utente non mette il secondo file viene generato una mappa casuale
 
 
 
-![alt_text](ingsw-hw1-documento-dei-requisiti/image5.png "image_tooltip")
+![alt_text](ingsw-hw1-documento-dei-requisiti/image2.png "image_tooltip")
 
 
 
@@ -630,7 +627,7 @@ Step 1) Se l’utente non mette il secondo file viene generato una mappa casuale
 
 
 
-![alt_text](ingsw-hw1-documento-dei-requisiti/image6.png "image_tooltip")
+![alt_text](ingsw-hw1-documento-dei-requisiti/image1.png "image_tooltip")
 
 
 

@@ -96,18 +96,11 @@ Il software è un semplice script da riga di comando che dato un input genera un
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/documento-dei0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/documento-dei0.png "image_tooltip")
+![alt_text](ingsw-hw1-documento-dei-requisiti/image1.png "image_tooltip")
 
 
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/documento-dei1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/documento-dei1.png "image_tooltip")
+![alt_text](ingsw-hw1-documento-dei-requisiti/image2.png "image_tooltip")
 
 
 
@@ -569,10 +562,7 @@ Il contesto dell’applicazione è un’applicazione stand-alone, indipendente d
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/documento-dei2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/documento-dei2.png "image_tooltip")
+![alt_text](ingsw-hw1-documento-dei-requisiti/image3.png "image_tooltip")
 
 
 
@@ -624,10 +614,7 @@ Step 1) Se l’utente non mette il secondo file viene generato una mappa casuale
 
 # 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/documento-dei3.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/documento-dei3.png "image_tooltip")
+![alt_text](ingsw-hw1-documento-dei-requisiti/image4.png "image_tooltip")
 
 
 
@@ -635,10 +622,7 @@ Step 1) Se l’utente non mette il secondo file viene generato una mappa casuale
 
 
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/documento-dei4.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/documento-dei4.png "image_tooltip")
+![alt_text](ingsw-hw1-documento-dei-requisiti/image5.png "image_tooltip")
 
 
 
@@ -646,10 +630,7 @@ Step 1) Se l’utente non mette il secondo file viene generato una mappa casuale
 
 
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/documento-dei5.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/documento-dei5.png "image_tooltip")
+![alt_text](ingsw-hw1-documento-dei-requisiti/image6.png "image_tooltip")
 
 
 

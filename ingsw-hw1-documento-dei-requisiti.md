@@ -609,7 +609,6 @@ Step 1) Se l’utente non mette il secondo file viene generato una mappa casuale
 ## Diagramma temporale
 
 
-# 
 
 ![alt_text](ingsw-hw1-documento-dei-requisiti/image6.png "image_tooltip")
 

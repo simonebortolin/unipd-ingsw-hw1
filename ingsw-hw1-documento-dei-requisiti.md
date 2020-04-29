@@ -66,7 +66,7 @@ I file di input e le scritte in output devono essere effettuate in un inglese co
 
 ## Prestazioni
 
-I risultati devono essere caricati in un tempo proporzionale alla dimensione dei file, della velocità del PC e proporzionale al numero di celle. Ovviamente se è una matrice 1000x1000 ci sta che il computer non risponda in 0,001 secondi ma ha bisogno di qualche 
+I risultati devono essere caricati in un tempo proporzionale alla dimensione dei file, della velocità del PC e proporzionale al numero di celle. Se il file è una matrice 1000x1000 non è richiesto che il computer risponda in 0,0001 secondi, ma in un tempo proporzionale alla dimensione della matrice.
 
 
 ## Affidabilità

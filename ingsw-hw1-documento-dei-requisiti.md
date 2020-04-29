@@ -1,4 +1,8 @@
+# IS1: primo homework
+# Documento dei requisiti
+
 # Prefazione
+
 
 Questo è un documento di specifica dei requisiti per il sistema “INGSW_HW1”. INGSW_HW1 è una semplice applicazione che si occupa di analizzare il contenuto di una mappa rettangolare contenente alcuni personaggi di L.o.t.R. Questi personaggi hanno delle abilità classiche e delle abilità aggiuntive in determinate situazioni temporali e spaziali.
 

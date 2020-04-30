@@ -6,9 +6,9 @@ di coordinate intere x,y che la divide in MxN celle.
 
 > La dimensione della mappa dovrà essere equivalente a quella di una scacchiera perciò 8x8.
 
-In ciascuna cella e’ possibile posizionare sino a cinque “pezzi”. Ogni pezzo e’ caratterizzato da un tipo {elfo/nano/orco}
+In ciascuna cella è possibile posizionare sino a cinque “pezzi”. Ogni pezzo è caratterizzato da un tipo {elfo/nano/orco}
 
-1. E’ necessario sviluppare una classe specifica per ciascuna tipologia di pezzo.
+1. È necessario sviluppare una classe specifica per ciascuna tipologia di pezzo.
 
 2. Ogni cella della mappa ha una tipologia (pianura/bosco/montagna)
 

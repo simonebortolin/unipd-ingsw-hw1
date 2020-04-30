@@ -3,11 +3,11 @@
 
 Si consideri una mappa rettangolare su cui sia sovrapposta una griglia di coordinate intere x,y che la divide in MxN celle.
 
-In ciascuna cella e’ possibile posizionare sino a cinque “pezzi”. Ogni pezzo e’ caratterizzato da un tipo {elfo/nano/orco}
+In ciascuna cella è possibile posizionare sino a cinque “pezzi”. Ogni pezzo è caratterizzato da un tipo {elfo/nano/orco}
 
 > *Ci sono solo queste 3 tipologie di pezzi.*
 
-1. E’ necessario sviluppare una classe specifica per ciascuna tipologia di pezzo.
+1. È necessario sviluppare una classe specifica per ciascuna tipologia di pezzo.
 
 2. Ogni cella della mappa ha una tipologia (pianura/bosco/montagna)
 

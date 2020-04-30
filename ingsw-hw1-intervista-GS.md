@@ -1,5 +1,5 @@
 # IS1: primo homework
-# Lettura commentata con il committente Matteo Lando
+# Lettura commentata con il committente Giacomo Seno
 
 Si consideri una mappa rettangolare su cui sia sovrapposta una griglia
 di coordinate intere x,y che la divide in MxN celle.

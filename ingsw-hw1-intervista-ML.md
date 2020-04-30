@@ -20,11 +20,11 @@ In ciascuna cella e’ possibile posizionare sino a cinque “pezzi”. Ogni pez
 Si leggano i dati relativi ad i pezzi da disporre sulla mappa da un file
 contenente gruppi di linee di testo secondo il formato:
 
-***X***
-
-***Y***
-
-***tipo***
+```
+X
+Y
+tipo
+```
 
 e li si disponga in una struttura dati adatta.
 

@@ -139,7 +139,7 @@ Letti i dati, si calcoli:
 
 4.  Il file di testo che descrive la struttura della mappa cherappresentazione ha?
 
-> *Vengono usati i simboli “P, F, M” rispettivamente per pianura, bosco, montagna. Vengono utilizzate le andatura a capo per delimitare le righe. Esempio:* \
+> *Vengono usati i simboli “P, F, M” rispettivamente per pianura, bosco, montagna. Vengono utilizzate le andatura a capo per delimitare le righe. Esempio:* 
 ```
 PPPPPPPPPPMMMMMM 
 PPPPPPPPPPMMMMMM 

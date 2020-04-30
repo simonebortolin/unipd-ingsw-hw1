@@ -23,11 +23,11 @@ In ciascuna cella e’ possibile posizionare sino a cinque “pezzi”. Ogni pez
 Si leggano i dati relativi ad i pezzi da disporre sulla mappa da un file
 contenente gruppi di linee di testo secondo il formato:
 
-***X***
-
-***Y***
-
-***tipo***
+```
+X
+Y
+tipo
+```
 
 e li si disponga in una struttura dati adatta. 
 > Il file di input è un file .txt formattato come segue: per ogni pezzo si ha che le prime due righe contengono le coordinate della posizione, mentre la seguente rappresenta il tipo. 
@@ -101,15 +101,19 @@ Letti i dati, si calcoli:
 1.  Il file di testo che descrive la struttura della mappa che rappresentazione ha?
 
 > Si possono usati i caratteri p: pianura, f: bosco, m: montagna. Si
-> usano le andatura a capo per delimitare le righe. Esempio:\
-> mmmmmmmmmmmmmmmm\
-> fffmmmmmmmmmffff\
-> fffffmmmmmmfffff\
-> fffffffmmfffffff\
-> ffffffffffffffff\
-> ppfffffffffppppp\
-> pppppfffffpppppp\
-> pppppppppppppppp
+> usano le andatura a capo per delimitare le righe. Esempio:
+
+```
+mmmmmmmmmmmmmmmm
+fffmmmmmmmmmffff
+fffffmmmmmmfffff
+fffffffmmfffffff
+ffffffffffffffff
+ppfffffffffppppp
+pppppfffffpppppp
+pppppppppppppppp
+```
+
 # Terza intervista
 
 1.  L’altro committente richiede che “Vengono usati i simboli “P, F, M” rispettivamente per pianura, bosco, montagna. Vengono utilizzate     le andatura a capo per delimitare le righe.” Mentre tu “Si possono     usati i caratteri p: pianura, f: bosco, m: montagna. Si usano le     andatura a capo per delimitare le righe.” Va bene se sono ammessi     entrambi i caratteri sia minuscolo che maiuscolo?

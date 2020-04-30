@@ -100,8 +100,7 @@ Letti i dati, si calcoli:
 
 10.  Le abilità dei personaggi hanno un limite di incremento e decremento dei valori di attacco e difesa es: +/- 100%?
 
-> *Non vengono definiti altri modificatori di combattimento oltre a quelli già descritti e non *
-> *possono essere modificati*
+> *Non vengono definiti altri modificatori di combattimento oltre a quelli già descritti e non possono essere modificati*
 
 11.  L’input è possibile utilizzare tramite arg?
 

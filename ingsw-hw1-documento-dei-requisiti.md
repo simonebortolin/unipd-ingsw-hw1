@@ -279,23 +279,16 @@ Controllare che la dimensione della matrice sia regolare
    <td>Requirements: File di testo già formattato secondo la seguente specifica:
 <p>
 F, f: bosco, P, p: pianura, M, m: montagna, es:
-<p>
-<code>PmmmmmPM</code>
-<p>
-<code>MFMFPFFF</code>
-<p>
-<code>FFMMFPMP</code>
-<p>
-<code>MFFPFFMP</code>
-<p>
-<code>FMFMMPPF</code>
-<p>
-<code>MPFPFPMM</code>
-<p>
-<code>FFMPMPMM</code>
-<p>
-<code>FPFFFPMF</code>
-<p>
+<pre>
+PmmmmmPM
+MFMFPFFF
+FFMMFPMP
+MFFPFFMP
+FMFMMPPF
+mpfmpfmf
+FFMPMPMM
+FPFFFPMF
+</pre>
 Il file di testo usa come delimitatore delle righe l’andatura a capo. Ogni singolo carattere corrisponde ad una cella. Non sono ammesse matrici non regolari, Ogni cella della mappa ha una e una sola tipologia (pianura/bosco/montagna), 
 <p>
 La prima cella inizia da 0,0 e si trova nell’angolo superiore sinistro
@@ -383,36 +376,30 @@ Un algoritmo per generare in maniera ramdom
    <td>Requirements: File di testo formattato
 <p>
 Si leggano i dati relativi ad i pezzi da disporre sulla mappa da un file contenente gruppi di linee di testo secondo il formato:
-<p>
+<pre class="prettyprint">
 X
-<p>
 Y
-<p>
 tipo
+</pre>
 <p>
+
 In caso di più elementi nella stessa cella è possibile usare entrambe le seguenti strategie:
-<p>
+
+<pre class="prettyprint">
 Xa 
-<p>
 Ya
-<p>
 tipo1a
-<p>
 tipo2a
-<p>
 tipo3a
-<p>
+
 Xb
-<p>
 Yb
-<p>
 tipo1b
-<p>
+
 Xb
-<p>
 Yb
-<p>
 tipo2b
+</pre>
    </td>
   </tr>
   <tr>

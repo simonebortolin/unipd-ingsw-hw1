@@ -58,25 +58,19 @@ Letti i dati, si calcoli:
 
 > *Semplicemente si inseriscono nelle successive righe gli altri tipi e senza ripetere le coordinate:*
 
-***Xa***
+```
+Xa
+Ya
+tipo1a
+tipo2a
+tipo3a
 
-***Ya***
-
-***tipo1a***
-
-***tipo2a***
-
-***tipo3a***
-
-***Xb***
-
-***Yb***
-
-***tipo1b***
-
-***tipo2b***
-
-***tipo3b***
+Xb
+Yb
+tipo1b
+tipo2b
+tipo3b
+```
 
 4.  In una cella è possibile non posizionare nessun elemento?
 
@@ -139,6 +133,7 @@ Letti i dati, si calcoli:
 4.  Il file di testo che descrive la struttura della mappa cherappresentazione ha?
 
 > *Vengono usati i simboli “P, F, M” rispettivamente per pianura, bosco, montagna. Vengono utilizzate le andatura a capo per delimitare le righe. Esempio:* 
+
 ```
 PPPPPPPPPPMMMMMM 
 PPPPPPPPPPMMMMMM 

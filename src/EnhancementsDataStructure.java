@@ -47,14 +47,30 @@ public class EnhancementsDataStructure {
     private final int value;
     private final int[][] matrix;
 
+    /**
+     * get the boosting
+     * @param land the land
+     * @param daytime the daytime
+     * @returnthe boosting
+     */
     public int getEnhancements(Land land, Daytime daytime) {
         return matrix[land.ordinal()][daytime.ordinal()];
     }
 
+    /**
+     * get value without reinforcements
+     * @return the value without reinforcements
+     */
     public int get() {
         return value;
     }
 
+    /**
+     * get value with boosting
+     * @param land the land
+     * @param daytime the daytime
+     * @return the value with boosting
+     */
     public int get(Land land, Daytime daytime) {
         return value + value * getEnhancements(land, daytime) / 100;
     }

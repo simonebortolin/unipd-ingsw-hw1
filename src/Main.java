@@ -1,5 +1,3 @@
-import java.awt.*;
-import java.io.File;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -45,9 +43,9 @@ public class Main {
                 println("");
 
                 println("6) The cell with the largest number of pieces of the same type");
-                println("O: " + Arrays.stream(OutputManager.getMaximCellOfType(map, Orge.class)).map(i -> "(" + i.x + "," + i.y + ")").collect(Collectors.joining(", ")));
-                println("E: " + Arrays.stream(OutputManager.getMaximCellOfType(map, Elf.class)).map(i -> "(" + i.x + "," + i.y + ")").collect(Collectors.joining(", ")));
-                println("D: " + Arrays.stream(OutputManager.getMaximCellOfType(map, Dwarf.class)).map(i -> "(" + i.x + "," + i.y + ")").collect(Collectors.joining(", ")));
+                println("O: " + Arrays.stream(OutputManager.getMaximumCellOfType(map, Orge.class)).map(i -> "(" + i.x + "," + i.y + ")").collect(Collectors.joining(", ")));
+                println("E: " + Arrays.stream(OutputManager.getMaximumCellOfType(map, Elf.class)).map(i -> "(" + i.x + "," + i.y + ")").collect(Collectors.joining(", ")));
+                println("D: " + Arrays.stream(OutputManager.getMaximumCellOfType(map, Dwarf.class)).map(i -> "(" + i.x + "," + i.y + ")").collect(Collectors.joining(", ")));
 
             } catch (ProgramException e) {
                 System.err.println("An error has occurred: " + e.getMessage());
@@ -55,7 +53,12 @@ public class Main {
         }
     }
 
-
+    /**
+     * wrapper for system.out.println
+     * it's too long to always write system.out
+     * @param arg the value
+     * @param <T> the type
+     */
     static<T> void println(T arg) { System.out.println(arg); }
 
 }

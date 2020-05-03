@@ -6,6 +6,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class InputManager {
+    /**
+     * read map from the file
+     * @param path the path of the file
+     * @return the map
+     */
     public static MapDataStructure readMap(String path) {
         ArrayList<String> arrayList = new ArrayList<>();
         try {
@@ -40,6 +45,10 @@ public class InputManager {
         return new MapDataStructure(matrix);
     }
 
+    /**
+     * generate map
+     * @return the map
+     */
     public static MapDataStructure generateMap() {
         Random ran = new Random();
         MapDataStructure.Item[][] matrix = new MapDataStructure.Item[8][8];
@@ -53,6 +62,12 @@ public class InputManager {
         return new MapDataStructure(matrix);
     }
 
+    /**
+     * read character from a file
+     * @param path the path of the file
+     * @param mapDataStructure the map to be added the character
+     * @return the map
+     */
     public static MapDataStructure readCharacter(String path, MapDataStructure mapDataStructure) {
 
         try {

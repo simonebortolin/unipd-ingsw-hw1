@@ -46,6 +46,8 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
         public int getCharactersSize() {
             return characters.size();
         }
+
+        public boolean isEmpty() {return characters.isEmpty(); }
     }
 
     public MapDataStructure(Item[][] matrix) {
@@ -54,6 +56,20 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
 
     private Item[][] matrix;
 
+    /**
+     * check if map has character
+     * @return true if the map ha character
+     */
+    public boolean isEmpty() {
+        return this.stream().allMatch(i -> i.getValue().isEmpty());
+    }
+
+    /**
+     * get the item by coordinates
+     * @param x the x coordinates
+     * @param y the y coordinates
+     * @return the item
+     */
     public Item get(int x, int y) {
         try {
             return matrix[x][y];
@@ -62,6 +78,12 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
         }
     }
 
+    /**
+     * set the item by coordinates
+     * @param x the x coordinates
+     * @param y the y coordinates
+     * @param item the item
+     */
     public void set(int x, int y, Item item) {
         try {
             matrix[x][y] = item;
@@ -70,6 +92,12 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
         }
     }
 
+    /**
+     * add character by coordinates
+     * @param x the x coordinates
+     * @param y the y coordinates
+     * @param characters the characters
+     */
     public void addCharacters(int x, int y, Character... characters) {
         try {
             matrix[x][y].addCharacters(characters);
@@ -78,6 +106,10 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
         }
     }
 
+    /**
+     * get the iterator
+     * @return the iterator
+     */
     @Override
     public Iterator<Pair<Point, Item>> iterator() {
         return new Iterator<>() {
@@ -107,6 +139,10 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
         };
     }
 
+    /**
+     * to string for the map
+     * @return the string
+     */
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -124,6 +160,10 @@ public class MapDataStructure implements Iterable<Pair<Point, MapDataStructure.I
         return stringBuilder.toString();
     }
 
+    /**
+     * to stream for lamba expression
+     * @return the stream
+     */
     public Stream<Pair<Point, Item>> stream() {
         Spliterator<Pair<Point, Item>> spliterator = Spliterators.spliteratorUnknownSize(iterator(), 0);
         return StreamSupport.stream(spliterator, false);
